@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletRequest;
 public class HomeController {
 
 
-    @GetMapping("/")
+    @GetMapping("/current")
     public String index() {
         return "<h1>" +SecurityUtils.getCurrentUserLogin();
     }
